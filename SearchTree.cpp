@@ -29,6 +29,13 @@ public:
 
     void insert(string element)
     {
+        node *newnode = new node(element, NULL, NULL);
         
+        newnode->info = element;
+        newnode->leftchild = NULL;
+        newnode->rightchild = NULL;
+
+        node *parent = NULL;
+        node *currentnode = NULL;
     }
 }
