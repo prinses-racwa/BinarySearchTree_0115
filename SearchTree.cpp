@@ -21,7 +21,7 @@ public:
 class BinaryTree
 {
 public:
-    Node *root;
+    Node *ROOT;
     BinaryTree()
     {
         ROOT = NULL;
@@ -76,7 +76,7 @@ public:
 
     void inorder(Node *ptr)
     {
-        if (root == NULL)
+        if (ROOT == NULL)
         {
             cout << "Tree is empty" << endl;
             return;
@@ -94,7 +94,15 @@ public:
     {
         if (ROOT == NULL)
         {
+            cout << "Tree is empty" << endl;
+            return;
+        }
 
+        if (ptr != NULL)
+        {
+            cout << ptr->info << "  ";
+            preorder(ptr->leftchild);
+            preorder(ptr->rightchild);
         }
     }
 }
