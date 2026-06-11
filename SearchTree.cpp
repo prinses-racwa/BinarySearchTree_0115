@@ -112,7 +112,7 @@ public:
 
         if (ROOT == NULL)
         {
-            cout << 'Tree is empty' << endl;
+            cout << "Tree is empty" << endl;
             return;
         }
 
