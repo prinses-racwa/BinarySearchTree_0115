@@ -29,7 +29,7 @@ public:
 
     void insert(string element)
     {
-        Node *newNode = new node(element, NULL, NULL);
+        Node *newNode = new Node(element, NULL, NULL);
         
         newNode->info = element;
         newNode->leftchild = NULL;
@@ -37,5 +37,7 @@ public:
 
         Node *parent = NULL;
         Node *currentnode = NULL;
+
+
     }
 }
