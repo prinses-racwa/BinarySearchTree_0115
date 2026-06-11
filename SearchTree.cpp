@@ -24,7 +24,7 @@ public:
     Node *root;
     BinaryTree()
     {
-        root = NULL;
+        ROOT = NULL;
     }
 
     void insert(string element)
@@ -42,7 +42,7 @@ public:
 
         if (parent == NULL)
         {
-            root = newNode;
+            ROOT = newNode;
             return;
         }
 
@@ -60,7 +60,7 @@ public:
     // as well as the current node of its parent
     void search(string element, Node *&parent, Node *&currentnode)
     {
-        currentnode = root;
+        currentnode = ROOT;
         parent = NULL;
 
         while (currentnode != NULL && currentnode->info != element)
@@ -90,5 +90,11 @@ public:
         }
     }
 
-    
+    void preorder(Node *ptr)
+    {
+        if (ROOT == NULL)
+        {
+
+        }
+    }
 }
